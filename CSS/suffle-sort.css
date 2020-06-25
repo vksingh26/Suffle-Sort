@@ -1,0 +1,137 @@
+htlm, body{
+    height: 100%;
+    width: 100%;
+    box-shadow: border-box;
+    margin: 0;
+    padding: 0;
+    font-style: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.header {
+    color: #fff;
+    background-color: #333333;
+    text-align: center;
+    padding: 15px 0;
+}
+.container {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.container-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.item {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+    color: #000;    
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 6px;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFEFEF;
+}
+
+.item1, .item8 {
+    border-left:10px solid #6F98A8;
+}
+
+.item2, .item4 {
+    border-left:10px solid #2B8EAD;
+}
+
+.item3, .item5, .item9 {
+    border-left:10px solid #2F454E;
+}
+
+.item6, .item7 {
+    border-left:10px solid #bfbfbf;
+}
+
+.button {
+    width: 120px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #72C3DC;
+    color: #fff;
+    box-shadow: 0px 5px 0px #2B8EAD;
+    padding: 20px 20px;
+    margin: 10px;
+}
+.button:hover,
+.button:focus,
+.button:active{
+    border: none;
+    outline: none;
+}
+.userContainer{
+    text-align: center;
+    font-style: italic;
+    margin: 10px 0;
+}
+@media only screen and (min-width: 1025px) {
+    .header{
+        background: none;
+        color: #000;
+    }
+    .container {
+        border-top: 4px solid #EFEFEF;
+        box-shadow: inset 0 4px 0px #bfbfbf;
+        justify-content: flex-start;
+        flex-direction: initial;
+        background-color: #EFEFEF;
+        align-items: flex-start;
+    }
+    .container-items {
+        flex-direction: row;
+        width: 70%;
+    }
+    .item {
+        width: 33%;
+        height: 250px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .item1, .item8 {
+        border: none;
+        background-color: #6F98A8;
+    }
+    
+    .item2, .item4 {
+        border: none;
+        background-color: #2B8EAD;
+    }
+    
+    .item3, .item5, .item9 {
+        border: none;
+        background-color: #2F454E;
+    }
+    
+    .item6, .item7 {
+        border: none;
+        background-color: #bfbfbf;
+    }
+    .button {
+        width: 100%;
+        box-shadow: 0px 5px 0px #2B8EAD;
+        padding: 10px 20px;
+    }
+}
